@@ -16,8 +16,7 @@
         display: flex;
         flex-direction: column;
       }
-      header,
-      .main .photo {
+      header {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -29,7 +28,6 @@
       header .menu {
         width: 70%;
       }
-
       header .menu ul {
         list-style-type: none;
         margin: 0 0;
@@ -47,19 +45,18 @@
         font-weight: bold;
       }
       .main .photo {
+        position: relative;
         background-image: url("building.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 700px;
       }
+
       .main .photo .quote {
-        width: 70%;
-      }
-      .main .photo .projects {
-        width: 30%;
-      }
-      .main .photo .quote {
+        position: absolute;
+        top: 300px;
+        left: 300px;
         height: 250px;
         width: 550px;
         margin: auto 0 auto 0;
@@ -67,6 +64,29 @@
       .main .photo .quote h1 {
         font-size: 60px;
         color: #c9dff2;
+      }
+      .main .photo .projects {
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #b6e4fc;
+        color: #1e3440;
+        text-align: center;
+      }
+      .main .photo .projects .navigation {
+        display: flex;
+        background-color: #4f5c63;
+        color: aliceblue;
+        text-align: center;
+      }
+      .main .photo .projects .navigation span {
+        flex-grow: 1;
+        font-size: 20px;
+        padding: 10px 20px;
+      }
+      .main .photo .projects .navigation .back {
+        border-right: solid aliceblue 2px;
       }
       .main .reputation {
         text-align: center;
@@ -122,8 +142,8 @@
           <h1>Feature Projects</h1>
           <p>The National University of Architecture</p>
           <div class="navigation">
-            <span class="back">Back</span>
-            <span>Next</span>
+            <span class="back">← Back</span>
+            <span>Next →</span>
           </div>
         </div>
       </div>
