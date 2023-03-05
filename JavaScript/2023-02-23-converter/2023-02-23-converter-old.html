@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <style>
+      body > div {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        padding: 20px 20px;
+        background: #cfd8e8;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <input type="number" id="kg" oninput="converter(value)" /><br />
+        <!-- <input type="number" id="kg" oninput="converter(value)" /><br /> -->
+        <label for="kg">Kilograms (kg)</label>
+      </div>
+      <div>
+        <input input type="number" id="lb" /><br />
+        <label for="lb">Pounds (lb) </label>
+      </div>
+    </div>
+    <script>
+      let kilogram = document.querySelector("#kg");
+
+      kilogram.addEventListener("click", (event) => {
+        console.log("click");
+      });
+
+      function converter(valNum) {
+        document.getElementById("lb").value = valNum * 2.205;
+      }
+    </script>
+  </body>
+</html>

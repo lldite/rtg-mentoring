@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing Script"
+      rel="stylesheet"
+    />
+    <style>
+      /* https://codepen.io/unrestben/pen/vYVyVJ */
+      .main {
+        width: 450px;
+        margin: auto;
+      }
+      header {
+        padding: 10px 0;
+        border: solid #1f3747 4px;
+        box-shadow: 0px 0px 15px;
+      }
+      header h1,
+      header p {
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        color: #1f3747;
+      }
+      header h1 {
+        font-size: 45px;
+      }
+      header p {
+        font-size: 15px;
+      }
+      .main .upper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        padding: 10px 30px 10px 30px;
+        background: #334552;
+      }
+      .main .upper a {
+        padding: 7px 10px;
+        margin: 3px 0;
+        color: white;
+        font-family: "Dancing Script", cursive;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .main .upper a:hover {
+        border-bottom: solid white 3px;
+        padding-bottom: 4px;
+      }
+      .main h2,
+      .main h3 {
+        text-align: center;
+        font-family: "Dancing Script", cursive;
+        color: #1f3747;
+        font-size: 30px;
+      }
+      .main h3 {
+        font-size: 20px;
+      }
+      .main p,
+      .main ul {
+        padding: 0;
+        color: #26323b;
+      }
+      .main li {
+        list-style-type: none;
+        font-size: 15px;
+        text-align: center;
+      }
+      .main img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
+      .main footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: solid #334552 10px;
+      }
+      .main footer .lower a {
+        font-family: "Dancing Script", cursive;
+        color: #26323b;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .main footer .lower a:hover {
+        color: #6d8387;
+      }
+      .main footer p {
+        margin: 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <h1>Cat Fancy Event</h1>
+        <p>The fanciest cat event</p>
+      </header>
+      <nav class="upper">
+        <a>home</a>
+        <a>about</a>
+        <a>locations</a>
+        <a>rsup</a>
+      </nav>
+      <div>
+        <h2>Cat Fancy Event 2014</h2>
+        <p>
+          The 115th annual Cat Fancy Event is being held in New York City on
+          December 21st. This is the fanciest cat event of the year, starring
+          over 300 different cats. This event was made to show America how great
+          cats really are. There will be treats at the walk in, and for the cat
+          owners there will be a buffet in the lounge. We thank you for coming
+          to our event site, and hope to see you on December 21st. Thank you.
+        </p>
+        <img src="cat.jpg" width="350" />
+
+        <h3>Featured Cats</h3>
+        <ul>
+          <li>George C.</li>
+          <li>Sam F.</li>
+          <li>Doug T.</li>
+          <li>Sally Z.</li>
+        </ul>
+        <img src="cat2.jpg" width="350" />
+        <img src="cat3.jpg" width="350" />
+        <img src="cat4.jpg" width="350" height="250" alt="Doug" />
+        <img src="cat5.jpg" width="350" height="250" alt="Sally" />
+        <p>
+          These cats will be the showrunners this year. George has a long
+          history in cat events, and is looking forward to this year's Cat Fancy
+          Event. Sam is a world-class runner, and will be showing his new
+          techniques. Doug likes to lay around, and will practice his abilities.
+          Sally was invited because her mom made a fit about not coming.
+        </p>
+        <footer>
+          <nav class="lower">
+            <a>home</a>
+            <a>about</a>
+            <a>locations</a>
+            <a>rsup</a>
+          </nav>
+          <p>© - Copyright 2014</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

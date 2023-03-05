@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .animals li {
+        list-style-type: none;
+      }
+      .cat,
+      .dog,
+      .hamster {
+        position: relative;
+        display: inline;
+        border: solid orange 3px;
+        background: coral;
+        padding: 10px 10px;
+        margin: 0px 10px;
+      }
+      .animals .submenu {
+        display: none;
+      }
+      .animals > li:hover .submenu {
+        position: absolute;
+        left: 5px;
+        z-index: 1;
+        display: block;
+        width: 100px;
+        margin-top: 5px;
+        padding: 5px 5px;
+        text-align: center;
+        color: gray;
+        background: peachpuff;
+        border: solid gray 1px;
+      }
+
+      .cakes li {
+        list-style-type: none;
+      }
+      .cakes > li {
+        position: relative;
+        display: inline;
+        padding: 10px 10px;
+        margin: 0 10px;
+        color: aliceblue;
+        background: palevioletred;
+        border: solid plum 3px;
+      }
+      .cakes .submenu {
+        display: none;
+      }
+      .cakes > li:hover .submenu {
+        position: absolute;
+        left: 5px;
+        z-index: 1;
+        display: block;
+        width: 100px;
+        margin-top: 5px;
+        padding: 5px 5px;
+        text-align: center;
+        color: gray;
+        background: pink;
+        border: solid gray 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Animals
+      <ul class="animals">
+        <li class="cat">
+          Cats
+          <ul class="submenu">
+            <li>Thin</li>
+            <li>Chunky</li>
+            <li>Body positive</li>
+            <li>Fat</li>
+            <li>Super fat</li>
+          </ul>
+        </li>
+        <li class="dog">
+          Dogs
+          <ul class="submenu">
+            <li>Thin</li>
+            <li>Chunky</li>
+            <li>Body positive</li>
+            <li>Fat</li>
+            <li>Super fat</li>
+          </ul>
+        </li>
+        <li class="hamster">
+          Hamsters
+          <ul class="submenu">
+            <li>Thin</li>
+            <li>Chunky</li>
+            <li>Body positive</li>
+            <li>Fat</li>
+            <li>Super fat</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div>
+      Cakes
+      <ul class="cakes">
+        <li>
+          Cupcakes
+          <ul class="submenu">
+            <li>Vegan</li>
+            <li>Sugar free</li>
+            <li>Protein rich</li>
+            <li>Keto</li>
+          </ul>
+        </li>
+        <li>
+          Gateaux
+          <ul class="submenu">
+            <li>Vegan</li>
+            <li>Sugar free</li>
+            <li>Protein rich</li>
+            <li>Keto</li>
+          </ul>
+        </li>
+        <li>
+          Wedding cakes
+          <ul class="submenu">
+            <li>Vegan</li>
+            <li>Sugar free</li>
+            <li>Protein rich</li>
+            <li>Keto</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

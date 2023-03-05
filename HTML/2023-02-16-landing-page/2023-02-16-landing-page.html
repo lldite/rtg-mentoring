@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0 0 100px 0;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      header .logo {
+        width: 50%;
+        padding: 20px 0 10px 20px;
+      }
+      header .menu {
+        width: 70%;
+      }
+      header .menu ul {
+        list-style-type: none;
+        margin: 0 0;
+        padding: 60px 0;
+      }
+      header .menu li {
+        display: inline;
+        font-size: 23px;
+        color: #7b868a;
+        padding: 0px 30px;
+        cursor: pointer;
+      }
+      header .menu li:hover {
+        color: #080600;
+        font-weight: bold;
+      }
+      .main .photo {
+        position: relative;
+        background-image: url("building.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+      }
+
+      .main .photo .quote {
+        position: absolute;
+        top: 300px;
+        left: 300px;
+        height: 250px;
+        width: 550px;
+        margin: auto 0 auto 0;
+      }
+      .main .photo .quote h1 {
+        font-size: 60px;
+        color: #c9dff2;
+      }
+      .main .photo .projects {
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #b6e4fc;
+        color: #1e3440;
+        text-align: center;
+      }
+      .main .photo .projects .navigation {
+        display: flex;
+        background-color: #4f5c63;
+        color: aliceblue;
+        text-align: center;
+      }
+      .main .photo .projects .navigation span {
+        flex-grow: 1;
+        font-size: 20px;
+        padding: 10px 20px;
+      }
+      .main .photo .projects .navigation .back {
+        border-right: solid aliceblue 2px;
+      }
+      .main .reputation {
+        text-align: center;
+        height: 100px;
+        margin: 20px 0;
+      }
+      .main .reputation h1 {
+        font-size: 40px;
+      }
+      .main .services {
+        display: flex;
+        justify-content: space-around;
+        height: 300px;
+      }
+      .main .services div {
+        width: 400px;
+        height: 200px;
+        border: solid #aebdc2 3px;
+        padding: 20px 20px 20px 30px;
+        cursor: pointer;
+      }
+      .main .services div:hover {
+        background-color: #f7c64a;
+        border: solid #080600 3px;
+      }
+      .main .services div h1 {
+        font-size: 25px;
+      }
+
+      .main .services div p {
+        color: #7b868a;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="logo3.jpg" width="100px" /></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#home"></a>Home</li>
+          <li><a href="#aboutus"></a>About Us</li>
+          <li><a href="#projects"></a>Projects</li>
+          <li><a href="#services"></a>Services</li>
+          <li><a href="#contactus"></a>Contact Us</li>
+        </ul>
+      </div>
+    </header>
+    <div class="main">
+      <div class="photo">
+        <img />
+        <div class="quote"><h1>Building things is our misson.</h1></div>
+        <div class="projects">
+          <h1>Feature Projects</h1>
+          <p>The National University of Architecture</p>
+          <div class="navigation">
+            <span class="back">← Back</span>
+            <span>Next →</span>
+          </div>
+        </div>
+      </div>
+      <div class="reputation"><h1>Our Reputation</h1></div>
+      <div class="services">
+        <div>
+          <img src="headphones.jpg" width="50" />
+          <h1>Best Services</h1>
+          <p>
+            Text text text text text text text text text text text text text
+            text text text text text text
+          </p>
+        </div>
+        <div>
+          <img src="headphones.jpg" width="50" />
+          <h1>Best Teams</h1>
+          <p>Text text text text text</p>
+        </div>
+        <div>
+          <img src="measure.jpg" width="60" />
+          <h1>Best Designs</h1>
+          <p>Text text text text text text text</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

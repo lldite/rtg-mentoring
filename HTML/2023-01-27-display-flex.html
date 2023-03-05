@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex</title>
+    <style>
+      div {
+        border-radius: 25px;
+      }
+      h2 {
+        margin: 30px auto 10px;
+        width: 600px;
+      }
+      .first-exercise,
+      .second-exercise,
+      .third-exercise,
+      .fourth-exercise {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+        width: 600px;
+        height: 160px;
+        background: orange;
+      }
+      .first-exercise .first,
+      .second,
+      .third,
+      .second-exercise .first,
+      .second,
+      .third,
+      .third-exercise .first,
+      .second,
+      .third,
+      .fourth-exercise .first,
+      .second,
+      .third {
+        width: 130px;
+        background: purple;
+        text-align: center;
+        font-size: 40px;
+        color: yellow;
+        padding: 40px 0;
+      }
+      .second-exercise .first {
+        order: 0;
+      }
+      .second-exercise .second {
+        order: 1;
+      }
+      .second-exercise .third {
+        order: -1;
+      }
+      .third-exercise {
+        flex-direction: row-reverse;
+      }
+      .fourth-exercise {
+        padding: 10px;
+      }
+      .fourth-exercise div {
+        margin: 10px;
+      }
+      .fourth-exercise .first {
+        flex-grow: 0;
+      }
+      .fourth-exercise .second {
+        flex-grow: 1;
+      }
+      .fourth-exercise .third {
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Source order:</h2>
+    <div class="first-exercise">
+      <div class="first">1</div>
+      <div class="second">2</div>
+      <div class="third">3</div>
+    </div>
+    <h2>Order:</h2>
+    <div class="second-exercise">
+      <div class="first">1</div>
+      <div class="second">2</div>
+      <div class="third">3</div>
+    </div>
+    <h2>Flex-direction:</h2>
+    <div class="third-exercise">
+      <div class="first">1</div>
+      <div class="second">2</div>
+      <div class="third">3</div>
+    </div>
+    <h2>Flex-grow:</h2>
+    <div class="fourth-exercise">
+      <div class="first">1</div>
+      <div class="second">2</div>
+      <div class="third">3</div>
+    </div>
+    <script>
+      //setTimeout(() => location.reload(), 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown meņū faiļiks</title>
+    <style>
+      li {
+        list-style-type: none;
+      }
+      .menu > li {
+        border: 1px solid black;
+        display: inline;
+        padding: 5px 10px;
+        margin: 5px;
+        position: relative;
+        background: #ccc;
+      }
+      .menu .submenu {
+        border: 1px solid black;
+        display: none;
+        background: #eee;
+        margin-top: 0px;
+        position: absolute;
+        left: 5px;
+        padding: 0;
+        z-index: 1;
+      }
+      .menu > li:hover .submenu {
+        display: block;
+      }
+      .menu .submenu li {
+        padding: 10px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Pirmais
+      <ul class="menu">
+        <li>
+          one
+          <ul class="submenu">
+            <li><a href="https://en.wikipedia.org/wiki/Zebra">zebra</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Lion">lion</a></li>
+            <li>and&nbsp;that's&nbsp;it</li>
+          </ul>
+        </li>
+        <li>
+          two
+          <ul class="submenu">
+            <li><a href="https://en.wikipedia.org/wiki/Turtle">Turtle</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Pony">Pony</a></li>
+            <li>turtle</li>
+          </ul>
+        </li>
+        <li>
+          three
+          <ul class="submenu">
+            <li><a href="https://en.wikipedia.org/wiki/Horse">Horse</a></li>
+            <li>snickers</li>
+            <li>tree</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script>
+      // setTimeout(() => location.reload(), 1000);
+    </script>
+  </body>
+</html>

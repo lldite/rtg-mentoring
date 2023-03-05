@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <style>
+      .weight {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin-top: 40px;
+      }
+      output {
+        background: #dce7f7;
+      }
+      .length {
+        display: flex;
+        margin-top: 40px;
+        width: 600px;
+      }
+      .length > div {
+        padding-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="weight">
+      <div>
+        <input type="number" id="kg" /> <label for="kg">Kilograms (kg)</label>
+      </div>
+      <div>
+        <output type="number" id="lb"></output
+        ><label for="lb">Pounds (lb)</label>
+      </div>
+    </div>
+    <div class="length">
+      <div>
+        <input type="number" id="m" /><label for="m"> Meters (m)</label>
+      </div>
+      <div><button id="button">Convert</button></div>
+      <div>
+        <input type="number" id="ft" /><label for="ft"> Feet (ft)</label>
+      </div>
+    </div>
+    <script src="./2023-02-26-converter.js"></script>
+  </body>
+</html>
