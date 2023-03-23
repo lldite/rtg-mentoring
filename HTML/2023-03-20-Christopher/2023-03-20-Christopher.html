@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher Malan</title>
+    <style>
+      body {
+        background-color: black;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .main {
+        width: 1400px;
+        margin: 0 auto 0 auto;
+        background-color: #1c1a1c;
+      }
+      .main > div {
+        width: 1400px;
+        height: 800px;
+      }
+      header {
+        text-align: center;
+        margin: 30px 0 0px 0;
+        background-color: black;
+      }
+      header ul {
+        list-style-type: none;
+        padding: 0;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+      }
+      header li {
+        display: inline;
+        padding-left: 30px;
+        color: gray;
+        font-size: 25px;
+      }
+      header li:hover {
+        color: white;
+        cursor: pointer;
+      }
+
+      .tribute {
+        display: flex;
+        justify-content: center;
+
+        overflow: hidden;
+      }
+      .tribute .image {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .tribute img {
+        filter: grayscale(100%);
+        width: 535px;
+        box-shadow: 0 0 100px black;
+      }
+      .tribute .text {
+        flex-grow: 1;
+        flex-basis: 0;
+        height: 300px;
+        padding: 190px 0 150px 0;
+      }
+      .tribute h2 {
+        margin: 0;
+        color: grey;
+        font-weight: 100;
+        font-size: 40px;
+      }
+      .tribute h1 {
+        margin: 5px 0 5px 0;
+        color: white;
+        font-weight: 100;
+        font-size: 60px;
+      }
+      .tribute pre {
+        margin-top: 40px;
+        font-size: 25px;
+        font-family: "Times New Roman", Times, serif;
+        color: gray;
+      }
+      .bio {
+        display: flex;
+        background-color: white;
+      }
+      .bio .text {
+        flex-grow: 1;
+        flex-basis: 0;
+        color: grey;
+        font-size: 20px;
+        padding-left: 150px;
+        padding-top: 140px;
+      }
+      .bio .text p {
+        width: 500px;
+      }
+      .bio .text p b {
+        font-size: 35px;
+      }
+      .bio .image {
+        flex-grow: 1;
+        flex-basis: 0;
+        height: 432px;
+        padding: 140px 0 80px 0;
+      }
+      .bio img {
+        width: 400px;
+        border-radius: 100%;
+        border: solid white 15px;
+        box-shadow: 0px 0px 2px;
+      }
+      .art {
+        background-color: #1c1a1c;
+      }
+      .art h1 {
+        color: white;
+        font-weight: 100;
+        text-decoration-line: underline;
+        text-align: center;
+        width: 1300px;
+        margin: 0 auto;
+        padding: 40px 0;
+      }
+      .art .paintings {
+        width: 1300px;
+        display: flex;
+        text-align: center;
+        border-top: solid white 3px;
+        padding-top: 20px;
+        margin: 0 auto;
+      }
+      .art .paintings > div {
+        flex-grow: 1;
+        flex-basis: 0;
+        width: 280px;
+        overflow: hidden;
+        padding: 0 10px;
+      }
+      .art .paintings img {
+        height: 300px;
+      }
+
+      .art .paintings h2 {
+        color: white;
+        font-weight: 100;
+      }
+      .art .paintings p {
+        color: grey;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <ul>
+          <li>Home</li>
+          <li>Donate</li>
+          <li>Contact</li>
+        </ul>
+      </header>
+      <div class="tribute">
+        <div class="image"><img src="malan.jpg" /></div>
+        <div class="text">
+          <h2>A Tribute to</h2>
+          <h1>Christoper Malan</h1>
+          <h2>1965 - 2020</h2>
+          <pre>
+"We beloved family, pays a tribute to our legend father
+Who was an artist of his age. He contributed to many 
+Of the strong firm and industries, with his art and true 
+Painting ideas."
+                </pre
+          >
+        </div>
+      </div>
+      <div class="bio">
+        <div class="text">
+          <p>
+            <b>Christopher Malan</b> was an landscape Artist an we pays a
+            tribute to our legend father who was artist of his age. He
+            contributed to many of the strong firm and industries, with his art
+            and true painting ideas, beloved family, pays a tribute to our
+            legend father who was an artist of his age.
+          </p>
+          <p>
+            He contributed to many of the strong firm beloved family.He
+            contributed to many of the strong firm and industries, with his art
+            and true painting ideas, beloved family, pays a tribute to our
+            legend father who was an artist of his age.He contributed to many of
+            the strong firm and industries, with his art and true painting
+            ideas, beloved family, pays a tribute to our legend father who was
+            an artist of his age.He contributed to many of the strong firm and
+          </p>
+          <p>
+            He contributed to many of the strong firm and industries, with his
+            art and true painting ideas, beloved family, pays a tribute to our
+            legend father who was an artist of his age.
+          </p>
+        </div>
+        <div class="image"><img src="malan5.jpg" /></div>
+      </div>
+      <div class="art">
+        <h1>Famous Works</h1>
+        <div class="paintings">
+          <div>
+            <img src="floral2.jpg" />
+            <h2>Floral Faded Art</h2>
+            <p>
+              He contributed to many of the strong firm beloved family.He
+              contributed to many of the strong firm and industries, with his
+              art and true painting ideas, beloved family, pays a tribute to our
+              legend father who was an artist of his age.He contributed to many
+              of the strong firm and industries,
+            </p>
+          </div>
+          <div>
+            <img src="vintage.jpg" />
+            <h2>Rural Vintage Art</h2>
+            <p>
+              He contributed to many of the strong firm beloved family.He
+              contributed to many of the strong firm and industries, with his
+              art and true painting ideas, beloved family, pays a tribute to our
+              legend father who was an artist of his age.He contributed to many
+              of the strong firm an ideas, beloved family,
+            </p>
+          </div>
+          <div>
+            <img src="creation.jpg" />
+            <h2>Fantasy Creation</h2>
+            <p>
+              He contributed to many of the strong firm beloved family.He
+              contributed to many of the strong firm and industries, with his
+              art and true painting ideas, beloved family, pays a tribute to our
+              legend father who was an artist many of the strong firm and
+              industries, with his art and true painting ideas, pays a tribute
+              to our legend father who was an artist of his age.
+            </p>
+          </div>
+          <div>
+            <img src="lonely.jpg" />
+            <h2>Lonely Lovely</h2>
+            <p>
+              He contributed to many of the strong firm beloved family.He
+              contributed to many of the str and true painting ideas, pays a
+              tribute to our legend father who was an artist of his age.
+            </p>
+          </div>
+          <div>
+            <img src="koala.jpg" />
+            <h2>Animal Beauty</h2>
+            <p>
+              the strong firm and industries, with his art and true painting
+              ideas, beloved family, pays a tribute to our legend father who was
+              an artist of his age.He contributed to many of the strong firm and
+              industries, with his art and true painting ideas, beloved family,
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
